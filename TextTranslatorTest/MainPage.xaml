@@ -8,6 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txtText" Grid.Row="0"></TextBox>
+        <Button x:Name="btnTest" Height="100" Width="200" Grid.Row="1" HorizontalAlignment="Center" Content="喋る!!"></Button>
     </Grid>
 </Page>
